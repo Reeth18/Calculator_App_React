@@ -1,0 +1,54 @@
+:root {
+  /* Background */
+  --bg-light: #fafafa;
+  --bg-dark: #09090b;
+
+  /* Text */
+  --text-light: #18181b;
+  --text-dark: #f4f4f5;
+
+  /* Card */
+  --card-light: #ffffff;
+  --card-dark: #18181b;
+
+  /* Button (CTA) */
+  --button-light: #7c3aed;
+  --button-dark: #8b5cf6;
+
+  /* Box Shadow */
+  --light-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --dark-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
+}
+
+/* Light Mode Background */
+.calculator-body.bg-light {
+  background-color: var(--bg-light) !important;
+}
+
+.calculator-body.text-dark {
+  color: var(--text-light) !important;
+}
+
+/* Dark Mode Background */
+.calculator-body.bg-dark {
+  background-color: var(--bg-dark) !important;
+}
+
+.calculator-body.text-white {
+  color: var(--text-dark) !important;
+}
+
+/* Mode Button and Card Styles */
+.bg-light .calculator-mode-button button,
+.bg-light .calculator-card {
+  background-color: var(--card-dark);
+  color: var(--text-dark);
+  box-shadow: var(--dark-shadow);
+}
+
+.bg-dark .calculator-mode-button button, 
+.bg-dark .calculator-card {
+  background-color: var(--card-light);
+  color: var(--text-light);
+  box-shadow: var(--light-shadow);
+}
