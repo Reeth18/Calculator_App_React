@@ -52,3 +52,7 @@
   color: var(--text-light);
   box-shadow: var(--light-shadow);
 }
+
+.bg-dark input {
+  box-shadow: var(--light-shadow);
+}
